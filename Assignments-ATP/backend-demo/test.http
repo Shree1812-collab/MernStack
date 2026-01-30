@@ -1,0 +1,75 @@
+### GET all products
+GET http://localhost:3001/prod-api/products
+
+###
+
+### CREATE product
+POST http://localhost:3001/prod-api/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Laptop",
+  "price": 60000
+}
+
+###
+
+### GET product by id
+GET http://localhost:3001/prod-api/products/id/1
+
+###
+
+### GET product by name
+GET http://localhost:3001/prod-api/products/name/Laptop
+
+###
+
+### UPDATE product
+PUT http://localhost:3001/prod-api/products/1
+Content-Type: application/json
+
+{
+  "price": 55000
+}
+
+###
+
+### DELETE product
+DELETE http://localhost:3001/prod-api/products/1
+
+###
+
+### GET users
+GET http://localhost:3001/user-api/users
+
+###
+
+### POST users
+POST http://localhost:3001/user-api/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Shreeja",
+  "email": "shreeja@gmail.com"
+}
+
+###
+
+### PUT users
+PUT http://localhost:3001/user-api/users/1
+Content-Type: application/json
+
+{
+  "name": "Shreeja K",
+  "email": "shreeja_updated@gmail.com"
+}
+
+###
+
+
+###DELETE users
+DELETE http://localhost:3001/user-api/users/1
+
+###
